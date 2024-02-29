@@ -25,6 +25,7 @@
             font-optical-sizing: auto;
             font-weight: 300; /* Un valor de peso elegido entre 300 y 700 */
             font-style: normal;
+            place-content: center;
         }
         
         .Beauty-Personal-Care {
@@ -45,12 +46,38 @@
         }
         
         .kitchen {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 240px);
+            display: flex;
+            justify-content: space-between; /* Ajusta esta propiedad según necesites */
+            align-items: left; /* Ajusta esta propiedad para alinear los ítems verticalmente */
+            flex-wrap: wrap; /* Permite que los ítems pasen a la siguiente línea si no hay espacio suficiente */
             padding: 10px;
+            background-color: var(--white);
             
         }
-        
+        .ollas {
+            width: 240px; /* Ajusta el ancho de los ítems según necesites */
+            margin: 10px; /* Añade un margen para separar los ítems */
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .vajillas {
+            width: 240px; /* Ajusta el ancho de los ítems según necesites */
+            margin: 10px; /* Añade un margen para separar los ítems */
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .cubiertos {
+            width: 240px; /* Ajusta el ancho de los ítems según necesites */
+            margin: 10px; /* Añade un margen para separar los ítems */
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
         
         .product-card img {
             width: 240px;
@@ -94,11 +121,23 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fill, 140px);
             }
-            .product-card img {
-                width: 140px;
-                height: 140px;
-                border-radius: 10px;
-                object-fit: cover;
+            .ollas {
+                width: 140px; /* Ajusta el ancho de los ítems según necesites */
+                margin: 5px; /* Añade un margen para separar los ítems */
+                padding: 10px;
+                
+            }
+            .vajillas {
+                width: 140px; /* Ajusta el ancho de los ítems según necesites */
+                margin: 5px; /* Añade un margen para separar los ítems */
+                padding: 10px;
+                
+            }
+            .cubiertos {
+                width: 140px; /* Ajusta el ancho de los ítems según necesites */
+                margin: 5px; /* Añade un margen para separar los ítems */
+                padding: 10px;
+                
             }
         }
     </style>
