@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>navbar</title>
+    <style>
+        
+        :root {
+            --white: #FFFFFF;
+            --black: #000;
+            --dark: #232830;
+            --text-input-field: #F7F7F7; 
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300; /* Un valor de peso elegido entre 300 y 700 */
+            font-style: normal;
+        }
+        .navbar {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid var(--very-light-pink);
+            justify-content: space-between;
+        }
+        .navbar-left, .navbar-right {
+            display: flex;
+        }
+        .figure .menu {
+            width: 25px;
+            height: 25px;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            margin: 0;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+        }
+        .navbar-left ul, .navbar-right ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left {
+
+        }
+        .navbar-left a, .navbar-right a {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            font-weight: bold;
+            font-size: var(--sm);
+            border-radius: 4px;
+            padding: 3px;
+            margin: 0px 8px 0px 8px;
+            display: inline-block;
+            border: 1px solid var(--white);
+        }
+        .navbar-left a:hover, .navbar-right a:hover {
+            border: 1px solid var(--hospital-green);
+            border-radius: 4px;
+            padding: 3px;
+            color: var(--hospital-green);
+        }
+        .menu {
+            display: none;
+        }
+        @media (max-width:640px) {
+            .menu {
+                display: block;
+            }
+            .navbar-left {
+                display: none;
+            }
+            .navbar-right .email {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <figure class="menu">
+            <img src="../images/Platzi_YardSale_Icons/icon_menu.svg" alt="menu" class="menu">
+        </figure>
+        <figure>
+            <img src="../images/logo/Nuestrasimplelogo.webp" alt="logo" class="logo">
+        </figure>
+        <div class="navbar-left">
+            
+            <ul>
+                <li>
+                    <a href="/" class="title">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="/" class="title">All</a>
+                </li>
+                <li>
+                    <a href="/" class="title">Clothes</a>
+                </li>
+                <li>
+                    <a href="/" class="title">Electronics</a>
+                </li>
+                <li>
+                    <a href="/" class="title">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/" class="title">Toys</a>
+                </li>
+                <li>
+                    <a href="/" class="title">Others</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+        <div class="navbar-right">
+            
+            <ul>
+                <li>
+                    <a href="/" class="email">myemail@example.com</a>
+                </li>
+                <li>
+                    <a href="/" class="sign-out">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>

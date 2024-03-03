@@ -27,9 +27,44 @@
             font-weight: 300; /* Un valor de peso elegido entre 300 y 700 */
             font-style: normal;
         }
+        .my-orders-container .title {
+            font-size: var(--lg);
+            font-weight: bold;
+            color: var(--dark);
+            margin-left: 20px;
+        }
         
+        .my-order-content {
+            display: grid;
+            width: 300px;
+            grid-template-columns: auto 1fr auto;
+            gap: 10px;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            margin-left: 10px;
+        }
+        .order span:first-child {
+            font-weight: bold;
+            color: var(--dark);
+            padding: 5%;
+        }
         
-        
+        .order span:nth-child(2) {
+            font-weight: normal; /* Asegura que el segundo span tenga un texto normal */
+        }
+        .price {
+            font-weight: bold;
+            color: var(--dark);
+            font-size: var(--md);
+            text-align: right;
+            justify-self: end;
+        }
+        .check {
+            justify-self: end;
+        }
+        .my-span span {
+            display: block;
+        }
         
         
     </style>
@@ -39,13 +74,21 @@
         <div class="my-orders-container">
             <h1 class="title">My orders</h1>
             <div class="my-order-content">
-                <div>
-                    <p class="order">
+                <div class="order">
+                    <p class="my-span">
                         <span>01.03.2024</span>
                         <span>6 articles</span>
                     </p>
-                    <p class="price">$560.00</p>
                 </div>
+                <div class="price">
+                    <p>$560.00</p>
+                </div>
+                <div class="check">
+                    <figure>
+                        <img src="../images/Platzi_YardSale_Icons/flechita.svg" alt="">
+                    </figure>
+                </div>
+                
             </div>
             
         </div>
